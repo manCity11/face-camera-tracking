@@ -1,0 +1,13 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+
+  video {
+    position: relative;
+    transform: scaleX(-1);
+  }
+
+  canvas {
+    position: absolute;
+  }
+}
