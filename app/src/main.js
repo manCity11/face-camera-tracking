@@ -43,7 +43,7 @@ import './main.scss';
 
           FaceDetectionService.detectFaces(mirroredVideo)
             .then(([face = {}] = []) => {
-              positionContainer.innerHTML = `(${face.center?.[0]}, ${face.center?.[1]})`;
+              positionContainer.innerHTML = face.center ? `(${face.center?.[0]}, ${face.center?.[1]})` : 'not available';
 
               ctxBoxes.clearRect(0, 0, boxesCanvas.width, boxesCanvas.height);
               isBoxesDisplayed && CanvasService.drawBox(boxesCanvas, [face]);
