@@ -8,5 +8,8 @@
     "**/dist/**",
     "**/node_modules/**",
     "**/reports/**"
-  ]
+  ],
+  "rules": {
+    "selector-class-pattern": null
+  }
 }

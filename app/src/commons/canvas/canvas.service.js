@@ -1,7 +1,6 @@
 export const CanvasService = (() => ({
   drawBox(canvas, faces = []) {
     const ctx = canvas.getContext('2d');
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     faces.forEach(({ topLeft = [], bottomRight = [], center = [] } = {}) => {
       ctx.beginPath();
@@ -11,9 +10,7 @@ export const CanvasService = (() => ({
       ctx.stroke();
 
       // draw middle
-      ctx.beginPath();
-      ctx.arc(center[0], center[1], 7, 0, 360, true);
-      ctx.fill();
+      ctx.fillRect(center[0], center[1], 3, 3);
     });
   },
   drawMirrorImage(ctx, video) {

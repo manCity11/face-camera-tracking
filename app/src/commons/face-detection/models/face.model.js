@@ -1,7 +1,7 @@
 // formula center of rect  ( (x1 + x2) / 2, (y1 + y2) / 2 ) 
 const computeCenter = (topLeft = [], bottomRight = []) => [
-  (topLeft[0] + bottomRight[0]) / 2,
-  (topLeft[1] + bottomRight[1]) / 2,
+  Math.floor((topLeft[0] + bottomRight[0]) / 2),
+  Math.floor((topLeft[1] + bottomRight[1]) / 2),
 ];
 
 export class Face {

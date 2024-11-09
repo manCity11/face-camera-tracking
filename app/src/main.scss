@@ -1,4 +1,22 @@
-.wrapper {
+body {
+  margin: 0;
+}
+
+.header {
+  background-color: #3498db;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+  height: 50px;
+  color: white;
+
+  h1 {
+    margin: 0;
+  }
+}
+
+.video__wrapper {
   display: flex;
   justify-content: center;
 
@@ -10,4 +28,14 @@
   canvas {
     position: absolute;
   }
+}
+
+.content__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button__container {
+  margin-top: 20px;
 }

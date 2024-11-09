@@ -6,9 +6,20 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
   </head>
   <body>
-    <div class="wrapper">
-      <video id="video" width="720" height="560" autoplay muted></video>
-      <canvas id="canvas" width="720" height="560"></canvas>
+    <header class="header">
+      <h1>Face Tracking Camera</h1>
+    </header>
+    <div class="content">
+      <div class="video__wrapper">
+        <video id="video" width="720" height="560" autoplay muted></video>
+        <canvas id="canvas" width="720" height="560"></canvas>
+        <canvas id="box-canvas" width="720" height="560"></canvas>
+      </div>
+      <div class="content__row position__container">
+        <span>Center position: </span>&nbsp;
+        <span class="position__message">not available</span>
+      </div>
+      <div class="content__row button__container"></div>
     </div>
   </body>
 </html>
