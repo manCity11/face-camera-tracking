@@ -2,7 +2,7 @@ import { ArduinoApi as ArduinoApiModule } from './arduino.api';
 import { PositionRequest } from './models/position-request.model';
 
 const CENTER_OFFSET = 60; // for camera stability
-const ANGLE_STEP = 1;
+const ANGLE_STEP = 5; // for the movement speed
 
 export const ArduinoService = ((ArduinoApi) => {
   const computeAngle = (center, axis) => {
